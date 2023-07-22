@@ -1,8 +1,11 @@
 # ds-test-plugin
-A DataSurgeon Plugin That is Used to Extract Numbers From Text. If you are on windows the plugin file can be found ```C:\ds\plugin.json```. The plugin file can also be stored in the current working directory (no matter the OS).
+A DataSurgeon Plugin That is Used to Extract Numbers From Text. 
 
 ## Quick Links
 WIP
+
+## Plugin File Location
+If you are on windows the plugin file can be found in the  ```C:\ds\``` directory. If you are Linux the plugin file can be found here: ```~/.DataSurgeon/plugins.json```. If the plugin file is not found in either of these directories it will check the current working directory.
 
 ## How to Create a Plugin
 All fields in the json object are required. In order for your plugin to work with the DataSurgeon option ```--add``` and ```--remove``` you need to upload your ```plugins.json``` file to a github repository. (the filename needs to be ```plugins.json``` and please ONLY include the plugin options you want to upload)
