@@ -2,7 +2,10 @@
 A DataSurgeon Plugin That is Used to Extract Numbers From Text. 
 
 ## Quick Links
-WIP
+- [Plugin File Location](#plugin-file-location)
+- [How to Create a Plugin](#how-to-create-a-plugin)
+- [Running the Created Plugin](#example-usage)
+
 
 ## Plugin File Location
 If you are on windows the plugin file can be found in the  ```C:\ds\``` directory. If you are Linux the plugin file can be found here: ```~/.DataSurgeon/plugins.json```. If the plugin file is not found in either of these directories it will check the current working directory.
