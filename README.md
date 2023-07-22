@@ -25,7 +25,7 @@ All fields in the json object are required. In order for your plugin to work wit
 ]
 ```
 
-## Example
+## Example Usage
 When the plugin file is loaded the option will now be added as an additional argument
 ```
 drew@DESKTOP-A5AO3TO$ ds -h
