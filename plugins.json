@@ -1,0 +1,8 @@
+[
+    {
+        "content_type":"numbers",
+        "arg_long_name": "numbers",
+        "help_message": "Extracts numbers",
+        "regex": "\\d+"
+    }
+]
