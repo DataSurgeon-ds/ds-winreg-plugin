@@ -1,5 +1,5 @@
-# Welcome to ds-test-plugin
-A guide to show you how to manage and create plugins for DataSurgeon 
+# Welcome to ds-winreg-plugin
+a DataSurgeon extension for extracting Windows registry paths from text. This README also includes a quick guide to manage and create plugins.
 
 ## Jump Right In To Creating
 - [Find Your Plugin File](#find-your-plugin-file)
@@ -31,11 +31,11 @@ Here's an example:
 ```json
 [
     {
-        "content_type": "numbers",
-        "arg_long_name": "numbers",
-        "help_message": "Extracts numbers",
-        "regex": "(\\\\d+)",
-        "source_url": "https://github.com/Drew-Alleman/ds-test-plugin/"
+        "content_type": "windows_registry",
+        "arg_long_name": "winregistry",
+        "help_message": "Extracts windows registry paths",
+        "regex": "^(HKEY_(?:LOCAL_MACHINE|CURRENT_USER|CLASSES_ROOT|CURRENT_CONFIG|USERS)\\\\[\\w\\-\\.\\\\]*)",
+        "source_url": "https://github.com/Drew-Alleman/ds-winreg-plugin/"
     }
 ]
 ```
@@ -47,19 +47,21 @@ drew@DESKTOP-A5AO3TO$ ds -h
 Options:
    ......
   -a, --aws                    Extract AWS keys
-      --numbers                Extracts numbers
+      --winregistry            Extracts windows registry paths
   -V, --version                Print version
 ```
 And here's how you can run it:
 ```
-C:\Users\Drew\Desktop\DataSurgeon\target\release>ds.exe --numbers -f data.txt --clean
-numbers: 1
-numbers: 2
-numbers: 3
-numbers: 4
-numbers: 234
-numbers: 2342342423566
-numbers: 897871028031
+C:\Users\DrewQ\Desktop\DataSurgeon\target\release>ds.exe -f registry.txt --winregistry --clean
+windows_registry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+windows_registry: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer
+windows_registry: HKEY_CLASSES_ROOT\.txt
+windows_registry: HKEY_CURRENT_CONFIG\Software\Microsoft\windows\CurrentVersion\Internet
+windows_registry: HKEY_USERS\S-1-5-21-3968247570-3627839484-3687258688-1000
+windows_registry: HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\New
+windows_registry: HKEY_CURRENT_USER\Software\Microsoft\Command
+windows_registry: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters
+windows_registry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 ```
 
 ## Managing Plugins
