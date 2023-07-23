@@ -1,0 +1,9 @@
+asdaad HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion as asdasd
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer
+HKEY_CLASSES_ROOT\.txt
+HKEY_CURRENT_CONFIG\Software\Microsoft\windows\CurrentVersion\Internet Settings
+HKEY_USERS\S-1-5-21-3968247570-3627839484-3687258688-1000
+HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\New
+HKEY_CURRENT_USER\Software\Microsoft\Command Processor
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
