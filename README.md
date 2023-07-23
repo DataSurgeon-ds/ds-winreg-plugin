@@ -64,7 +64,7 @@ numbers: 897871028031
 
 ## Managing Plugins
 ### Adding a New Plugin
-To add a new plugin you need to use the ```--add <URL>``` option. The URL needs to be a remote github repository hosting a ```plugins.json``` file. [How to use your new plugin]().
+To add a new plugin you need to use the ```--add <URL>``` option. The URL needs to be a remote github repository hosting a ```plugins.json``` file. [How to use your new plugin](https://github.com/Drew-Alleman/ds-test-plugin/blob/main/README.md#how-to-use-your-new-plugin).
 ```
 drew@DESKTOP-A5AO3TO:~$ ds --add https://github.com/Drew-Alleman/ds-test-plugin/
 [*] Download and added plugin: https://github.com/Drew-Alleman/ds-test-plugin/
