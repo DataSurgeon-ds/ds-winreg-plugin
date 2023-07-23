@@ -1,16 +1,21 @@
 # Welcome to ds-test-plugin
 A guide to create your own plugins for DataSurgeon
 
-## Jump Right In
+## Jump Right In To Creating
 - [Find Your Plugin File](#find-your-plugin-file)
 - [Creating Your Own Plugin](#creating-your-own-plugin)
 - [How to Use Your New Plugin](#how-to-use-your-new-plugin)
 
+## Jump Right In To Managing Plugins
+- [Adding a new Plugin](#adding-a-new-plugin)
+- [Removing a Plugin](#removing-a-plugin)
+- [Listing All Plugins](#listing-all-plugins)
 
-## Find Your Plugin File
+## Creating Plugins
+### Find Your Plugin File
 We've got you covered whether you're using Windows or Linux. If you're a Windows user, you'll find the plugin file in the  `C:\ds\` directory. If you're on Linux, look for the plugin file here: `~/.DataSurgeon/plugins.json`. And if by chance the plugin file isn't found in either of these directories, we'll automatically check the current working directory.
 
-## Creating Your Own Plugin
+### Creating Your Own Plugin
 Every field in the json object is important. To ensure your plugin works seamlessly with the DataSurgeon options `--add` and `--remove`, remember to upload your `plugins.json` file to a GitHub repository. Please make sure the filename remains as `plugins.json` and only include the plugin options you wish to upload. Here's a quick guide to the fields:
 
 | Field          | Description                                                                                           |
@@ -34,7 +39,7 @@ Here's an example:
     }
 ]
 ```
-## How to Use Your New Plugin
+### How to Use Your New Plugin
 Once your plugin file is loaded, the option will be added as an additional argument.
 ```
 drew@DESKTOP-A5AO3TO$ ds -h
@@ -47,7 +52,7 @@ Options:
 ```
 And here's how you can run it:
 ```
-C:\Users\DrewQ\Desktop\DataSurgeon\target\release>ds.exe --numbers -f data.txt --clean
+C:\Users\Drew\Desktop\DataSurgeon\target\release>ds.exe --numbers -f data.txt --clean
 numbers: 1
 numbers: 2
 numbers: 3
@@ -55,4 +60,26 @@ numbers: 4
 numbers: 234
 numbers: 2342342423566
 numbers: 897871028031
+```
+
+## Managing Plugins
+### Adding a New Plugin
+To add a new plugin you need to use the ```--add <URL>``` option. The URL needs to be a remote github repository hosting a ```plugins.json``` file.
+```
+C:\Users\DrewQ\Desktop\DataSurgeon\target\release>ds.exe --add https://github.com/Drew-Alleman/ds-test-plugin/
+[*] Download and added plugin: https://github.com/Drew-Alleman/ds-test-plugin/
+```
+### Listing All Plugins
+To list all plugins you can use the ```--list``` option.
+```
+C:\Users\Drew\Desktop\DataSurgeon\target\release>ds.exe --list
+Source URL                                     | Argument Long Name
+https://github.com/Drew-Alleman/ds-test-plugin | numbers
+https://github.com/Drew-Alleman/ds-test-plugin | test
+```
+### Removing a Plugin
+To remove a plugin you don't want anymore you can use the ```--remove``` option.
+```
+C:\Users\DrewQ\Desktop\DataSurgeon\target\release>ds.exe --remove https://github.com/Drew-Alleman/ds-test-plugin//
+[*] Removed plugin: https://github.com/Drew-Alleman/ds-test-plugin//
 ```
