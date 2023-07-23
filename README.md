@@ -40,7 +40,7 @@ Here's an example:
 ]
 ```
 ### How to Use Your New Plugin
-Once your plugin file is loaded, the option will be added as an additional argument.
+Once your plugin file is loaded, the option will be added as an additional argument. As you can see the name of the argument is the ```arg_long_name```. 
 ```
 drew@DESKTOP-A5AO3TO$ ds -h
 
