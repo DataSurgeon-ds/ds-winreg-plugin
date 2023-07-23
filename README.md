@@ -74,6 +74,8 @@ drew@DESKTOP-A5AO3TO:~$ ds --add https://github.com/Drew-Alleman/ds-winreg-plugi
 ### Listing All Plugins
 To list all plugins you can use the ```--list``` option.
 ```
+drew@DESKTOP-A5AO3TO$ ds --list
+
 Plugin File: /home/drew/.DataSurgeon/plugins.json
 
 Source URL                                     | Argument Long Name
