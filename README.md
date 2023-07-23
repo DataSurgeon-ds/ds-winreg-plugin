@@ -66,10 +66,10 @@ windows_registry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\R
 
 ## Managing Plugins
 ### Adding a New Plugin
-To add a new plugin you need to use the ```--add <URL>``` option. The URL needs to be a remote github repository hosting a ```plugins.json``` file. [How to use your new plugin](https://github.com/Drew-Alleman/ds-test-plugin/blob/main/README.md#how-to-use-your-new-plugin).
+To add a new plugin you need to use the ```--add <URL>``` option. The URL needs to be a remote github repository hosting a ```plugins.json``` file. [How to use your new plugin](https://github.com/Drew-Alleman/ds-winreg-plugin/blob/main/README.md#how-to-use-your-new-plugin).
 ```
-drew@DESKTOP-A5AO3TO:~$ ds --add https://github.com/Drew-Alleman/ds-test-plugin/
-[*] Download and added plugin: https://github.com/Drew-Alleman/ds-test-plugin/
+drew@DESKTOP-A5AO3TO:~$ ds --add https://github.com/Drew-Alleman/ds-winreg-plugin/
+[*] Download and added plugin: https://github.com/Drew-Alleman/ds-winreg-plugin/
 ```
 ### Listing All Plugins
 To list all plugins you can use the ```--list``` option.
@@ -77,11 +77,11 @@ To list all plugins you can use the ```--list``` option.
 Plugin File: /home/drew/.DataSurgeon/plugins.json
 
 Source URL                                     | Argument Long Name
-https://github.com/Drew-Alleman/ds-test-plugin | numbers
+https://github.com/Drew-Alleman/ds-winreg-plugin | numbers
 ```
 ### Removing a Plugin
 To remove a plugin you don't want anymore you can use the ```--remove``` option.
 ```
-drew@DESKTOP-A5AO3TO:~$ ds --remove https://github.com/Drew-Alleman/ds-test-plugin//
-[*] Removed plugin: https://github.com/Drew-Alleman/ds-test-plugin//
+drew@DESKTOP-A5AO3TO:~$ ds --remove https://github.com/Drew-Alleman/ds-winreg-plugin//
+[*] Removed plugin: https://github.com/Drew-Alleman/ds-winreg-plugin//
 ```
