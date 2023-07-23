@@ -18,6 +18,7 @@ All fields in the json object are required. In order for your plugin to work wit
 | arg_long_name  | The argument name for the command-line interface. This must be unique across all plugins.             |
 | help_message   | A brief description of what the plugin does. This will be displayed in the help message of the tool. |
 | regex          | The regular expression used to match the content. To ensure compatibility with the ```--clean``` option, your regex should be designed such that the entire match ```($0)``` contains the exact content you're interested in. This allows the ```--clean``` option to extract only the relevant matched content. You can test your regex patterns with https://regexr.com/|
+| source_url | The URL to the Github repository hosting the plugin | 
 
 
 ```json
@@ -26,7 +27,8 @@ All fields in the json object are required. In order for your plugin to work wit
         "content_type":"numbers",
         "arg_long_name": "numbers",
         "help_message": "Extracts numbers",
-        "regex": "(\\d+)"
+        "regex": "(\\d+)",
+        "source_url": "https://github.com/Drew-Alleman/ds-test-plugin/"
     }
 ]
 ```
