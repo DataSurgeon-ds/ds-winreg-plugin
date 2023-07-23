@@ -5,5 +5,12 @@
         "help_message": "Extracts numbers",
         "regex": "(\\d+)",
         "source_url": "https://github.com/Drew-Alleman/ds-test-plugin/"
+    },
+    {
+        "content_type":"numbers",
+        "arg_long_name": "test",
+        "help_message": "Extracts numbers",
+        "regex": "(\\d+)",
+        "source_url": "https://github.com/Drew-Alleman/ds-test-plugin/"
     }
 ]
