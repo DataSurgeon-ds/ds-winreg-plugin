@@ -1,5 +1,5 @@
 # Welcome to ds-test-plugin
-A guide to create your own plugins for DataSurgeon
+A guide to show you how to manage and create plugins for DataSurgeon 
 
 ## Jump Right In To Creating
 - [Find Your Plugin File](#find-your-plugin-file)
