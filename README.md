@@ -23,6 +23,7 @@ Every field in the json object is important. To ensure your plugin works seamles
 | content_type   | This should be a one-word description of the content you're searching for (no spaces). This is the word that gets printed alongside the matched content.                            |
 | arg_long_name  | This is the unique argument name for the command-line interface. It must be unique across all plugins.             |
 | help_message   | This is a short and sweet description of what your plugin does. It'll appear in the help message of the tool. |
+| version        | This is the version number of your plugin (e.g: 1.0.0) |
 | regex          | This is the regular expression that's used to match the content. To ensure compatibility with the `--clean` option, your regex should be designed such that the entire match `($0)` contains the exact content you're interested in. This allows the `--clean` option to extract only the relevant matched content. For testing your regex patterns, we recommend using https://regexr.com/|
 | source_url | This is the URL to the GitHub repository hosting your plugin | 
 
@@ -33,6 +34,7 @@ Here's an example:
     {
         "content_type": "windows_registry",
         "arg_long_name": "winregistry",
+        "version": "1.0.0",
         "help_message": "Extracts windows registry paths",
         "regex": "^(HKEY_(?:LOCAL_MACHINE|CURRENT_USER|CLASSES_ROOT|CURRENT_CONFIG|USERS)\\\\[\\w\\-\\.\\\\]*)",
         "source_url": "https://github.com/Drew-Alleman/ds-winreg-plugin/"
