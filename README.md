@@ -66,20 +66,20 @@ numbers: 897871028031
 ### Adding a New Plugin
 To add a new plugin you need to use the ```--add <URL>``` option. The URL needs to be a remote github repository hosting a ```plugins.json``` file.
 ```
-C:\Users\DrewQ\Desktop\DataSurgeon\target\release>ds.exe --add https://github.com/Drew-Alleman/ds-test-plugin/
+drew@DESKTOP-A5AO3TO:~$ ds --add https://github.com/Drew-Alleman/ds-test-plugin/
 [*] Download and added plugin: https://github.com/Drew-Alleman/ds-test-plugin/
 ```
 ### Listing All Plugins
 To list all plugins you can use the ```--list``` option.
 ```
-C:\Users\Drew\Desktop\DataSurgeon\target\release>ds.exe --list
+Plugin File: /home/drew/.DataSurgeon/plugins.json
+
 Source URL                                     | Argument Long Name
 https://github.com/Drew-Alleman/ds-test-plugin | numbers
-https://github.com/Drew-Alleman/ds-test-plugin | test
 ```
 ### Removing a Plugin
 To remove a plugin you don't want anymore you can use the ```--remove``` option.
 ```
-C:\Users\DrewQ\Desktop\DataSurgeon\target\release>ds.exe --remove https://github.com/Drew-Alleman/ds-test-plugin//
+drew@DESKTOP-A5AO3TO:~$ ds --remove https://github.com/Drew-Alleman/ds-test-plugin//
 [*] Removed plugin: https://github.com/Drew-Alleman/ds-test-plugin//
 ```
