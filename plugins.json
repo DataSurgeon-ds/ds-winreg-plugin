@@ -5,7 +5,7 @@
         "version": "1.0.0",
         "help_message": "Extracts windows registry paths",
         "regex": "(HKEY_(?:LOCAL_MACHINE|CURRENT_USER|CLASSES_ROOT|CURRENT_CONFIG|USERS)\\\\[\\w\\-\\.\\\\]*)",
-        "source_url": "https://github.com/Drew-Alleman/ds-winreg-plugin/"
+        "source_url": "https://github.com/DataSurgeon-ds/ds-winreg-plugin/"
         
     }
 ]
